@@ -37,7 +37,7 @@ public class signUp extends AppCompatActivity {
                 if (TextUtils.isEmpty(user) || TextUtils.isEmpty(pass) || TextUtils.isEmpty(repass)) {
                     Toast.makeText(signUp.this, "All fields Required", Toast.LENGTH_SHORT).show();
                 } else if (!isPasswordComplex(pass)) {
-                    Toast.makeText(signUp.this, "Password must include numbers, letters, upper and lower case, and be at least 8 characters long", Toast.LENGTH_LONG).show();
+                    Toast.makeText(signUp.this, "Password must include numbers, letters, Upper and lower case, and be at least 8 characters long", Toast.LENGTH_LONG).show();
                 } else if (!pass.equals(repass)) {
                     Toast.makeText(signUp.this, "Passwords are not matching", Toast.LENGTH_SHORT).show();
                 } else {
